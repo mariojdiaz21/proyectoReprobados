@@ -75,7 +75,7 @@ async function listStudentData() {
             console.log(resultForActivities.values[0])
         }
 }
-
+rangeToLookAt  = 20;
     for(i = 0; i < rangeToLookAt + 1; i++ ){
         console.log(parseInt(firstCellToEvaluate) + i)
         let rangeForEvaluate = parseInt(firstCellToEvaluate) + i
