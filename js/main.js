@@ -16,7 +16,9 @@ const music = document.getElementById("music")
 const conta = document.getElementById("conta")
 const bio = document.getElementById('bio')
 const quim = document.getElementById('quim')
-const ingles = document.getElementById('ing')
+const ingles = document.getElementById('ingles')
+const DC = document.getElementById("DC")
+const HdA = document.getElementById("HdA")
 let path = workbook.split('')
 path = path.slice(39, 83).join('')
 
@@ -31,6 +33,13 @@ profesores.onchange = ()=>{
             mate.style.display = "none"
             fifu.style.display = "none"
             estadistica.style.display = "none"
+          }
+          if(profes=="Josúe Castro" || profes=="Mónica Cerón"){
+            DC.style.display = "inline-block"
+            HdA.style.display = "inline-block"
+          }else{
+            DC.style.display = "none"
+            HdA.style.display = "none"
           }
 
         if(profes=="Nancy Méndez" || profes=="Bárbara Sánchez"){

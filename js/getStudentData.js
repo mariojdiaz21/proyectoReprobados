@@ -125,6 +125,7 @@ async function listStudentData() {
             let studentName = resultForStudents.values[0][1]
             
             if(studentName.includes(',')){
+                let clave = resultForStudents.values[0][0]
                 var nameForApi = studentName.split(',').slice(1)
                 nameForApi = nameForApi.toString()
                 nameForApi.trimStart()
